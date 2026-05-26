@@ -7,7 +7,7 @@ const pizzaRoutes = require('./Routes/pizzaRoutes');
 const cartRoutes = require('./Routes/cartRoutes');
 const authRoutes = require('./Routes/authRoutes');
 const orderRoutes = require('./Routes/orderRoutes')
-const ingredientRoutes = require('./routes/ingredientRoutes');
+const ingredientRoutes = require('./Routes/ingredientRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
