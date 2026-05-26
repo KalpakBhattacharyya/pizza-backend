@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Ingredient = require('../models/Ingredient'); // Adjust this path if your model is in a different folder!
+const Ingredient = require('../Models/Ingredient');
 
 router.get('/', async (req, res) => {
     try {
