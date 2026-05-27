@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 4000;
 app.use(cors({ origin: '*' }));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/pizzaria')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/pizzaria')
     .then(() => console.log("MongoDB connected"))
     .catch(err => console.error(err));
 
